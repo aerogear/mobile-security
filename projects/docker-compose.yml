@@ -1,0 +1,49 @@
+version: '2'
+
+services:
+  web:
+    command: npm run dev
+    build:
+      dockerfile: Dockerfile-dev
+      context: ./api-server
+    volumes:
+      - ./api-server/:/app
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+      - keycloak
+    environment:
+      - MONGO_DB_URI=mongodb://mongo:27017/secure-backend
+      - KEYCLOAK_CONFIG_PATH=./config/keycloak-docker-compose.json
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes_from:
+      - mongodata
+
+  mongodata:
+    image: tianon/true
+    volumes:
+      - /data/db
+
+  keycloak:
+    image: weilee/keycloak-https:latest
+    command: ["-b", "0.0.0.0", "-Dkeycloak.import=/tmp/keycloak-config/secure-app-realm.json"]
+    ports:
+      - "9090:8080"
+      - "9443:8443"
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - SSL_KEYSTORE_PATH=/tmp/keycloak/server.keystore
+      - SSL_KEYSTORE_ALIAS=server
+      - SSL_KEYSTORE_PASS=Password1
+      - TRUST_KEYSTORE_PATH=/tmp/keycloak/trust.keystore
+      - TRUST_KEYSTORE_PASS=Password1
+    volumes:
+      - ./client-certificate-authentication/keycloak/keystores:/tmp/keycloak
+      - ./keycloak:/tmp/keycloak-config
+  
