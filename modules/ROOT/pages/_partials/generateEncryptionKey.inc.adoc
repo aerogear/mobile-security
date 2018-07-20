@@ -1,0 +1,12 @@
+    /**
+     - Generate an encryption key for the realm db
+
+     - Returns: An encryption key
+     */
+        class func generateEncryptionKey() -> Data {
+        let byteLength = 64
+        let randomNumberSize = 1000000
+        let bytes = [UInt32](repeating: 0, count: byteLength).map { _ in arc4random_uniform(UInt32(randomNumberSize)) }
+        let data = Data(bytes: bytes, count: byteLength)
+        return data
+    }

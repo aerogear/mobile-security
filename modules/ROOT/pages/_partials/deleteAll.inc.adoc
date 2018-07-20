@@ -1,5 +1,5 @@
     /**
-     - Delete all stored entities
+     - Delete all stored entitities
 
      - Parameter onComplete - a closure called after deletion
      */

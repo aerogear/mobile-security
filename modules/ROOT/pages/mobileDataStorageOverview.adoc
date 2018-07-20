@@ -58,14 +58,9 @@ We have implemented a secure storage feature in the sample mobile templates to a
 
 === Native Android
 
-[.float-group]
---
-[.left]
-image::https://raw.githubusercontent.com/aerogear/android-showcase-template/master/screenshots/storage_menu.png[,270,480]
+// image::https://raw.githubusercontent.com/aerogear/android-showcase-template/master/screenshots/storage_menu.png[,270,480]
 
-[.left]
-image::https://raw.githubusercontent.com/aerogear/android-showcase-template/master/screenshots/storage_main.png[,270,480]
---
+// image::https://raw.githubusercontent.com/aerogear/android-showcase-template/master/screenshots/storage_main.png[,270,480]
 
 The secret notes can be saved to either file system or database (SQLite). In both cases, the notes will be encrypted automatically when persisted, and decrypted automatically when loaded into the app.
 
@@ -191,11 +186,8 @@ include::{partialsdir}/getDbPassword.inc.adoc[]
 
 === Native iOS
 
-[.float-group]
---
-[.left]
-image::ios-storage-1.png[,270,480]
---
+// image::ios-storage-1.png[,270,480]
+
 
 The secret notes are being persisted using an encrypted https://realm.io/docs/swift/latest/[Realm Mobile DB].
 
@@ -223,7 +215,7 @@ When the application is initialised for the first time, a new encryption key is 
 .Generate Encryption Key
 [source,swift,linenums,indent=0]
 ....
-include::{partialsdir}/generateEncryptionKey[]
+include::{partialsdir}/generateEncryptionKey.inc.adoc[]
 ....
 
 ==== Interacting with Realm DB

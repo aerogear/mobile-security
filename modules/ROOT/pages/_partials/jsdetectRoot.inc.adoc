@@ -1,1 +1,15 @@
-
+  /**
+  * Detect if the device is running Root.
+  */
+  detectRoot(): void {
+    var self = this;
+      IRoot.isRooted(function(rooted) {
+        if(rooted) {
+          self.addDetection("Root Access Detected", true);
+        } else {
+          self.addDetection("Root Access Not Detected", false);
+        }
+      }, function(error) {
+        console.log(error);
+      });
+  }

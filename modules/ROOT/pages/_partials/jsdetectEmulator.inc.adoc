@@ -1,1 +1,10 @@
-
+  /**
+  * Detect if the device is running on an emulator.
+  */
+  detectEmulator(): void {
+    if(device.isVirtual) {
+      this.addDetection("Emulator Access Detected", true);
+    } else {
+      this.addDetection("Emulator Access Not Detected", false);
+    }
+  }
