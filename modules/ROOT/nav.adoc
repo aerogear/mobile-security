@@ -1,14 +1,13 @@
 // ** xref:{partialsdir}/attributes.adoc[]
 
-* xref:index.adoc#aerogear-mobile-security[Overview]
+* xref:index.adoc#aerogear-mobile-security[Recommendations Overview]
 ** xref:index.adoc#authentication-session-management[Authentication and Session Management]
 ** xref:index.adoc#data-storage-summary[Data Storage]
 ** xref:index.adoc#network-security[Network]
 ** xref:index.adoc#mobile-app-self-defence[Mobile App Defense]
 ** xref:index.adoc#handling-sensitive-data-overview[Sensitive Data]
 ** xref:index.adoc#cryptography-summary[Cryptography]
-* Reference
-
+* xref:references.adoc[References]
 ** xref:owaspTopMobileRisks.adoc[OWASP Top 10 Mobile Risks]
 ** xref:mobileSecurityRequirements.adoc[Mobile Application Security Requirements]
 ** xref:owaspMobileDevelopmentGuidelines.adoc[Secure Mobile Development Guidelines]

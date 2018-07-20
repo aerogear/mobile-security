@@ -1,7 +1,7 @@
 = Device Security Overview
 
 |===
-| Do's | Dont's
+| Do: | Do not:
 
 | *Detect compromised environments (rooted/jaibreak) at runtime and react accordingly* _(Ensure the environment is not tampered with)_
 | 

@@ -6,13 +6,13 @@ This is a review this the https://www.stigviewer.com/stig/mobile_application_sec
 
 The requirements can be grouped in the following categories
 
-=== Design & High Level Requirement
+=== Design and High Level Requirement
 * The mobile app must enforce organization-defined limitations on the embedding of data types within other data types.
 * The mobile app must not record or forward sensor data unless explicitly authorized to do so.
 * The mobile app must initialize all parameter values on startup.
 * The mobile app must not be vulnerable to race conditions.
 
-=== Authentication & Authorisation
+=== Authentication and Authorisation
 * The mobile app must implement organization-defined out-of-band authentication under organization-defined conditions.
 * The mobile app must electronically verify Personal Identity Verification (PIV) credentials.
 * The mobile app must fail to an initial state when the application unexpectedly terminates, unless it maintains a secure state at all times.

@@ -1,7 +1,7 @@
 = Handling Sensitive Data Overview
 
 |===
-| Do's | Dont's
+| Do: | Do not:
 | *Sensitive data should stay in RAM for as little time as possible* _(Prevent data leak)_
 | *Send sensitive data over alternate channels (e.g, SMS, MMS, or notifications)* _(They are not encrypted)_
 

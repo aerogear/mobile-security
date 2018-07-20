@@ -1,7 +1,7 @@
 = Network Security
 
 |===
-|Do's |Dont's
+|Do: |Do not:
 
 |*Include a Backup Cert Pin.* _(Retain app connectivity if new keys on server are used or the CA is changed)_.
 |*Pin the full certificate*. _(The full cert, and potentially backup certs are available for inspection, the certificate is bundled with the app meaning that when a cert expires the app must be rebuilt with a new cert)_.

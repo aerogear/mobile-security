@@ -1,7 +1,7 @@
 = Data Storage Summary
 
 |===
-| Do's | Dont's
+| Do: | Do not:
 | *Classify data storage according to sensitivity and apply controls accordingly* _(To understand what information should be protected)_
 | *Store any sensitive data on a mobile device where possible* _(Prevent data leak)_.
 

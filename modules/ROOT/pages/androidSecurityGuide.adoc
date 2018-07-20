@@ -48,14 +48,14 @@ The signed application certificate defines which user id is associated with whic
 The application signing ensures that applications cannot access each other except through a well-defined IPC (Inter-process communication).
 
 == Authentication
-Two key pieces make up Authentication & Key Storage from Android 6.0.
+Two key pieces make up Authentication and Key Storage from Android 6.0.
 
 * _Android Keystore_ - Cryptographic key storage which also provides standard crypto actions.
 * _Authentication Components_ - Assert the user's presence and/or provide user authentication.
 
 There are two authentication components:
 
-* _Gatekeeper_ - Pin, Pattern & Password Authentication
+* _Gatekeeper_ - Pin, Pattern and Password Authentication
 * _Fingerprint_  - Fingerprint Authentication
 
 The two authentication components work with the Keystore and (other components) to support the use of hardware-backed authentication tokens or AuthTokens.

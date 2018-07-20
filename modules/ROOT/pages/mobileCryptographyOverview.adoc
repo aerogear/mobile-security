@@ -1,7 +1,7 @@
 = Cryptography Summary
 
 |===
-| Do's | Dont's
+| Do: | Do not:
 
 | Apply cryptographic standards that will withstand the test of time for at least 10 years into the future
 | Including the keys in the same attacker-readable directory as the encrypted content
