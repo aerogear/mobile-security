@@ -9,7 +9,7 @@ Be aware that some websites may automatically redirect from their home page to a
 
 Note that the whitelist applies only to the main Cordova webview, and does not apply to an https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/[InAppBrowser] webview or opening links in the system web browser.
 
-== Iframes & Calback ID Mechanism
+== Iframes and Calback ID Mechanism
 If content is served in an iframe from a whitelisted domain, that domain will have access to the native Cordova bridge. This means that if you whitelist a third-party advertising network and serve those ads through an iframe, it is possible that a malicious ad will be able to break out of the iframe and perform malicious actions. Because of this, you should generally not use iframes unless you control the server that hosts the iframe content.
 
 == Certificate Pinning

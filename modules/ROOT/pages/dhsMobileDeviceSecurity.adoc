@@ -22,7 +22,7 @@ Tampering, "Modifying data, software, firmware, or hardware without authorizatio
 
 * Threats
 ** Mobile OS vulnerabilities
-** Vendors & Carriers slow to rollout system updates (especially for Android)
+** Vendors and Carriers slow to rollout system updates (especially for Android)
 ** Jailbroke or rooted devices
 ** Vulnerabilities in vendor or carrier-specific additions
 ** Vulnerabilities in cloud services provided by the vendors

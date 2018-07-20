@@ -1,0 +1,1 @@
+include::https://raw.githubusercontent.com/aerogear/android-showcase-template/a46e9848874f6024e36b77a5151737875a41f414/app/src/main/java/com/aerogear/androidshowcase/MainActivity.java[tags=onActivityResult]

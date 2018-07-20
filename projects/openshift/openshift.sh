@@ -1,7 +1,7 @@
 #!/bin/bash
 export PROJECT_NAME=mobile-security
 
-# Create the project & services
+# Create the project and services
 oc new-project $PROJECT_NAME
 oc new-app -f ./api-server.json
 sleep 1

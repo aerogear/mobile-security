@@ -9,6 +9,7 @@
 
 = AeroGear Mobile Security
 
+[[aerogear-mobile-security]]
 == Mobile Security Recommendations Overview
 
 include::mobileAuthOverview.adoc[leveloffset=+1]

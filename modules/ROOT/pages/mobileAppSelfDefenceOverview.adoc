@@ -1,7 +1,7 @@
 = Mobile App Self-Defence
 
 |===
-|Do's |Dont's
+|Do: |Do not:
 
 |*Detect compromised environments (rooted/jaibreak) at runtime and react accordingly* _(Ensure the environment is not tampered with)_
 |*Obfuscation is not protection, assume everything in the code is public.* _(Application code *can* be deobfuscated)_
@@ -156,7 +156,7 @@ The Developer Mode status can be checked to see if this is enabled.
 .Code
 [source,java,linenums,indent=0]
 ....
-include::detectDeveloperOptions.inc.adoc[]
+include::{partialsdir}/detectDeveloperOptions.inc.adoc[]
 ....
 
 === Native iOS

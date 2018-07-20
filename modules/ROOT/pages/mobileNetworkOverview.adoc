@@ -1,7 +1,7 @@
 = Network Security
 
 |===
-|Do's |Dont's
+|Do: |Do not:
 
 |*Include a Backup Cert Pin.* _(Retain app connectivity if new keys on server are used or the CA is changed)_.
 |*Pin the full certificate*. _(The full cert, and potentially backup certs are available for inspection, the certificate is bundled with the app meaning that when a cert expires the app must be rebuilt with a new cert)_.
@@ -48,11 +48,7 @@ A number of features were added to enhance the security of the channel between t
 
 === Android
 
-[.float-group]
---
-[.left]
-image::android-pinning-1.png[,270,480]
---
+// image::android-pinning-1.png[,270,480]
 
 ==== Certificate Pinning
 The main code logic for certificate pinning is found under https://github.com/aerogear/android-showcase-template/blob/master/app/src/main/java/com/aerogear/androidshowcase/mvp/components/CertPinningHelper.java[here] in the CertPinningHelper class.
@@ -118,11 +114,7 @@ include::{partialsdir}/invokeAPI.inc.adoc[]
 
 === iOS
 
-[.float-group]
---
-[.left]
-image::ios-pinning-1.png[,270,480]
---
+// image::ios-pinning-1.png[,270,480]
 
 ==== Certificate Pinning
 The https://github.com/aerogear/ios-showcase-template/blob/master/ios-showcase-template/services/CertPinningService.swift[Certificate Pinning Service] and the https://github.com/aerogear/ios-showcase-template/blob/master/ios-showcase-template/AppDelegate.swift[AppDelegate] contain the main code for configuring and performing certificate pinning.

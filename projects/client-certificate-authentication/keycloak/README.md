@@ -16,7 +16,7 @@ For more details about how to configure Keycloak, please check [here](http://www
 
 * If you have the Keycloak running before, make sure deleting the existing `secure-app` realm first.
 * Run `docker-compose up` and wait for all the services to be up and running.
-** The local Keycloak server us already configured to use SSL & enable client certificate authentication. The `trust.keystore` file already contains the CA cert that is used to sign the client certs in Step 1.
+** The local Keycloak server us already configured to use SSL and enable client certificate authentication. The `trust.keystore` file already contains the CA cert that is used to sign the client certs in Step 1.
 
 ## Step 3: Setup a local DNS server using dnsmasq
 
@@ -72,7 +72,7 @@ The instructions here are for macOS only, but dnsmasq works on Linux as well.
 
 ### On an iOS Device
 
-* Send the certificates & p12 files as email attachments, or use services like Google Drive or Dropbox to sync the files on the device. Install them on the device.
+* Send the certificates and p12 files as email attachments, or use services like Google Drive or Dropbox to sync the files on the device. Install them on the device.
 * After the root cert is installed, go to "Settings -> General -> About -> Certificate Trust Settings" and enable the newly installed CA cert.
 
 ## Step 5: Verify you can access the Keycloak server from the emulator
