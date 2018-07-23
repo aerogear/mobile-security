@@ -92,12 +92,12 @@ The main code logic is found under https://github.com/aerogear/android-showcase-
 The following code snippets describe the main authentication code logic in the mobile app.
 
 ==== Configuration
-The Keycloak configuration is saved in the https://github.com/aerogear/android-showcase-template/tree/master/app/src/main/assets/mobile-services.json[mobile-services.json] file.
+The Keycloak configuration is saved in the https://raw.githubusercontent.com/aerogear/android-showcase-template/eacf9f364346d3eaa0cfc40f37aa53ae2696e17e/app/src/main/assets/mobile-services.json[mobile-services.json] file.
 
 .Code
 [source,json,linenums,indent=0]
 ....
-include::https://raw.githubusercontent.com/aerogear/android-showcase-template/master/app/src/main/assets/mobile-services.json[]
+include::https://raw.githubusercontent.com/aerogear/android-showcase-template/eacf9f364346d3eaa0cfc40f37aa53ae2696e17e/app/src/main/assets/mobile-services.json[]
 ....
 
 The redirect url of the application is defined in `android.defaultConfig.manifestPlaceholders` of the apps https://github.com/aerogear/android-showcase-template/blob/master/app/build.gradle[build.gradle] file.
@@ -150,7 +150,7 @@ An Authentication and Session Management implementation has been provided in our
 The Application uses http://openid.net/connect/[OpenID Connect] for authentication and access control. The Open Source Identity and Access Management server, http://www.keycloak.org[Keycloak], is being used as an Identity Provider.
 The https://github.com/aerogear/aerogear-ios-sdk/tree/master/docs/auth[Aerogear Auth SDK] is being used to communicate with the Keycloak server.
 
-The Keycloak server config is defined in the https://raw.githubusercontent.com/aerogear/ios-showcase-template/master/secure-ios-app/mobile-services.json[mobile-services.json] file.
+The Keycloak server config is defined in the :https://raw.githubusercontent.com/aerogear/ios-showcase-template/58efd7744fd57b27145d27f5ed4459dab89fc7fa/ios-showcase-template/mobile-services.json[mobile-services.json] file.
 
 .Code
 [source,swift,linenum,indent=0]
@@ -214,17 +214,11 @@ include::{partialsdir}/ioslogout.inc.adoc[]
 
 === Apache Cordova
 
-[.float-group]
---
-[.left]
 image::cordova-auth-1.png[,270,480]
 
-[.left]
 image::cordova-auth-2.png[,270,480]
 
-[.left]
-image::cordova-auth-3.png[,270,480]
---
+// TODO: remove image::cordova-auth-3.png[,270,480]
 
 The https://www.npmjs.com/package/keycloak-js[Keycloak JS] library is being used to perform the OpenID Connect based authentication.
 
