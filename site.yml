@@ -6,8 +6,8 @@ site:
   start_page: mobile-security::index
 content:
   sources:
-  - url: .
-    branches: HEAD
+  - url: https://github.com/finp/mobile-security
+    branches: AEROGEAR-7687
 ui:
   bundle:
     url: https://github.com/aerogear/antora-ui/raw/master/build/ui-bundle.zip
@@ -21,3 +21,5 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     linkattrs: ''
+output:
+  dir: ./public
