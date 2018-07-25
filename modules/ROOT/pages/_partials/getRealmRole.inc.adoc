@@ -1,6 +1,0 @@
-  /**
-   * Return the users realm level roles
-   */
-  getRealmRoles(): void {
-    return KeycloakService.auth.authz.realmAccess.roles;
-  }
