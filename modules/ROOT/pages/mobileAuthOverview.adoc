@@ -150,7 +150,7 @@ An Authentication and Session Management implementation has been provided in our
 The Application uses http://openid.net/connect/[OpenID Connect] for authentication and access control. The Open Source Identity and Access Management server, http://www.keycloak.org[Keycloak], is being used as an Identity Provider.
 The https://github.com/aerogear/aerogear-ios-sdk/tree/master/docs/auth[Aerogear Auth SDK] is being used to communicate with the Keycloak server.
 
-The Keycloak server config is defined in the :https://raw.githubusercontent.com/aerogear/ios-showcase-template/58efd7744fd57b27145d27f5ed4459dab89fc7fa/ios-showcase-template/mobile-services.json[mobile-services.json] file.
+The Keycloak server config is defined in the link:https://raw.githubusercontent.com/aerogear/ios-showcase-template/58efd7744fd57b27145d27f5ed4459dab89fc7fa/ios-showcase-template/mobile-services.json[mobile-services.json] file.
 
 .Code
 [source,swift,linenum,indent=0]
